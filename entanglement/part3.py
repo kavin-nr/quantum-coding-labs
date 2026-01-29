@@ -39,7 +39,8 @@ def plot_entropy_heatmap(M, N, state):
     plt.title(f"N: {N} and state {state}:")
     plt.tight_layout()
     plt.colorbar()
-    plt.savefig(f"heatmaps/{state}{N}.png")
+    plt.savefig(f"graphs/activity5/{state}{N}.png")
+    plt.close()
 
 
 def avg_entropy_for_k(rho, N, k):
@@ -78,7 +79,7 @@ def main():
         plt.ylabel("Average Entropy")
         plt.title(f"Average Entropy vs k for {name}{N}")
         plt.ylim(-0.1, 1.1)
-        plt.savefig(f"entropygraphs/{name}{N}.png")
+        plt.savefig(f"graphs/activity6/{name}{N}.png")
         plt.close()
     
 
